@@ -298,76 +298,31 @@ justify-content: center; /* centers horizontally */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse; /* 🔥 this flips the order */
-  gap: 20px;
-}
-}
-
-.why-logo {
-  width: 120px; /* adjust size */
-  height: auto;
-}
-.why-container {
-  display: flex;
-  align-items: center;
   gap: 20px;
 }
 
-.why-logo {
-  width: 70px !important;
-  max-width: 70px !important;
-  height: auto !important;
-  flex-shrink: 0; /* prevents stretching */
-}
 .why-text {
+  flex: 1;
   max-width: 600px;
 }
+
 .why-logo {
-  border-radius: 50%;
-}
-.why-logo {
-  width: 80px;       /* smaller size */
-  height: auto;
-  max-width: 100%;   /* prevents overflow */
-}
-.why-logo {
-  width: 60px !important;
-  height: 60px !important;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
-}
-.section {
-  padding: 60px 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
-section .why-container img.why-logo {
-  width: 60px !important;
-  height: 60px !important;
-  max-width: 60px !important;
-  object-fit: cover !important;
-  display: block;
-}
+/* Mobile layout */
 @media (max-width: 600px) {
   .why-container {
     flex-direction: column;
     text-align: center;
   }
-}
-.why-container {
-  display: flex !important;
-  flex-direction: row !important;        /* keep horizontal */
-  justify-content: space-between;
-  align-items: center;
-}
 
-.why-text {
-  order: 1;
-}
-
-.why-logo {
-  order: 2;
-}
-  @media (max-width: 768px) {
-  .logo {
+  /* Logo on top (remove this if you want it below instead) */
+  .why-logo {
     order: -1;
   }
 }
