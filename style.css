@@ -371,23 +371,3 @@ section .why-container img.why-logo {
     order: -1;
   }
 }
-
-.about-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-/* Mobile fix */
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .logo {
-    width: 200px;
-    height: auto;
-  }
-}
